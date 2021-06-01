@@ -69,8 +69,5 @@ class CoursRepositoryTest {
          arrayList = (ArrayList) serializer.deserializeObject(coursFilePath);
 
          assertEquals(sizeBefore-1, arrayList.size());
-
-
-
     }
 }

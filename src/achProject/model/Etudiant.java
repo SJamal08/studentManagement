@@ -11,8 +11,7 @@ public class Etudiant implements Serializable {
     private String codeEtu;
     private ArrayList<Cours> listCoursInscrits;
 
-    public Etudiant(int id, String nom, String prenom, String codeEtu) {
-        this.id = id;
+    public Etudiant( String nom, String prenom, String codeEtu) {
         this.nom = nom;
         this.prenom = prenom;
         this.codeEtu = codeEtu;
@@ -20,6 +19,7 @@ public class Etudiant implements Serializable {
 
     public Etudiant() {
     }
+
 
     public int getId() {
         return id;
