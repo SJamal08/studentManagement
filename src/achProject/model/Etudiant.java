@@ -1,11 +1,15 @@
 package achProject.model;
 
-public class Etudiant {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Etudiant implements Serializable {
 
     private int id;
     private String nom;
     private String prenom;
     private String codeEtu;
+    private ArrayList<Cours> listCoursInscrits;
 
     public Etudiant(int id, String nom, String prenom, String codeEtu) {
         this.id = id;
@@ -47,6 +51,14 @@ public class Etudiant {
 
     public void setCodeEtu(String codeEtu) {
         this.codeEtu = codeEtu;
+    }
+
+    public ArrayList<Cours> getListCoursInscrits() {
+        return listCoursInscrits;
+    }
+
+    public void setListCoursInscrits(ArrayList<Cours> listCoursInscrits) {
+        this.listCoursInscrits = listCoursInscrits;
     }
 
     @Override

@@ -1,8 +1,9 @@
 package achProject.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cours {
+public class Cours implements Serializable {
 
     private int id;
     private String sigle;
@@ -14,8 +15,7 @@ public class Cours {
     public Cours() {
     }
 
-    public Cours(int id, String sigle, String titre, int nbreMaxEtu) {
-        this.id = id;
+    public Cours(String sigle, String titre, int nbreMaxEtu) {
         this.sigle = sigle;
         this.titre = titre;
         this.nbreMaxEtu = nbreMaxEtu;
