@@ -9,8 +9,8 @@ public class Cours implements Serializable {
     private String sigle;
     private String titre;
     private int nbreMaxEtu;
-    private ArrayList<Etudiant> etudiantList;
-    private ArrayList<Cours> prerequis;
+    private ArrayList<Etudiant> etudiantList = new ArrayList<Etudiant>();
+    private ArrayList<Cours> prerequis = new ArrayList<Cours>();
 
     public Cours() {
     }

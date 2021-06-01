@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class InscriptionRepository {
 
-    private CoursRepository coursRepository;
-    private EtudiantRepository etudiantRepository;
+    private CoursRepository coursRepository= new CoursRepository();
+    private EtudiantRepository etudiantRepository = new EtudiantRepository();
 
     public void inscrire(Cours cours, Etudiant etudiant ) throws IOException, ClassNotFoundException {
 

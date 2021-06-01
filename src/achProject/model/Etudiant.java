@@ -9,7 +9,7 @@ public class Etudiant implements Serializable {
     private String nom;
     private String prenom;
     private String codeEtu;
-    private ArrayList<Cours> listCoursInscrits;
+    private ArrayList<Cours> listCoursInscrits = new ArrayList<Cours>();
 
     public Etudiant( String nom, String prenom, String codeEtu) {
         this.nom = nom;
