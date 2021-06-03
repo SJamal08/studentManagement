@@ -3,7 +3,7 @@ package test;
 import achProject.model.Cours;
 import achProject.model.Etudiant;
 import achProject.repository.CoursRepository;
-import achProject.utils.dataFile.Serialization;
+import achProject.utils.Serialization;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -21,7 +21,7 @@ class CoursRepositoryTest {
     @Test
     void create() throws IOException, ClassNotFoundException {
         Cours cours = new Cours("MTH","Maths",30);
-        Etudiant etudiant = new Etudiant("Boukari","Jamal","fakeCode");
+        //Etudiant etudiant = new Etudiant("Boukari","Jamal","fakeCode");
 
         System.out.println(cours.toString());
         coursRepository.create(cours);

@@ -2,7 +2,7 @@ package test;
 
 import achProject.model.Etudiant;
 import achProject.repository.EtudiantRepository;
-import achProject.utils.dataFile.Serialization;
+import achProject.utils.Serialization;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

@@ -17,6 +17,19 @@ public class Etudiant implements Serializable {
         this.codeEtu = codeEtu;
     }
 
+    public Etudiant( String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.codeEtu = codeEtu;
+    }
+
+    public Etudiant(int id, String nom, String prenom) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.codeEtu = codeEtu;
+    }
+
     public Etudiant() {
     }
 

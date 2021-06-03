@@ -1,8 +1,7 @@
 package achProject.repository;
 
-import achProject.model.Cours;
 import achProject.model.Etudiant;
-import achProject.utils.dataFile.Serialization;
+import achProject.utils.Serialization;
 
 import java.io.IOException;
 import java.util.ArrayList;
