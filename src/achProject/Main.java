@@ -10,32 +10,38 @@ public class Main {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		// TODO Auto-generated method stub
 
+		int choix=0;
 
+		while (choix!=4) {
 
-		System.out.println("MENU");
-		System.out.println("************************************");
-		System.out.println(" 1-  Read a file");
-		System.out.println(" 2-  Manage students ");
-		System.out.println(" 3-  Manage courses ");
-		System.out.println(" 4-  Exit");
-		System.out.println("Select the correct number of your choice : ");
-		System.out.print(">>> ");
-		int choix = Clavier.readInt();
+			System.out.println("MENU");
+			System.out.println("************************************");
+			System.out.println(" 1-  Read a file");
+			System.out.println(" 2-  Manage students ");
+			System.out.println(" 3-  Manage courses ");
+			System.out.println(" 4-  Exit");
+			System.out.println("Select the correct number of your choice : ");
+			System.out.print(">>> ");
+			choix = Clavier.readInt();
 
-		switch (choix) {
-			case 1:
-				new Service().ReadFile();
-				break;
-			case 2:
-				studentMenu();
-				break;
-			case 3:
-				courseMenu();
-				break;
-			case 4:
-				break;
+			switch (choix) {
+				case 1:
+					new Service().ReadFile();
+					break;
+				case 2:
+					studentMenu();
+					break;
+				case 3:
+					courseMenu();
+					break;
+				case 4:
+					break;
+
+			}
 
 		}
+
+
 
 	}
 

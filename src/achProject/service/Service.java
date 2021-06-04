@@ -16,8 +16,6 @@ public class Service implements IService{
     @Override
     public void ReadFile() throws IOException, ClassNotFoundException {
 
-        List result = new ArrayList();
-
         System.out.println(">>>> READ A FILE <<<<<");
         System.out.println("1 - Read the students ' file");
         System.out.println("2 - Read the courses ' file");

@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class Clavier {
 
-    private static Scanner sc = new Scanner(System.in);
-
     public static int readInt(){
         try {
+            Scanner sc = new Scanner(System.in);
             int result =sc.nextInt();
-            sc.close();
             return result;
         } catch (Exception e) {
             System.out.println("Erreur saisie");
@@ -19,6 +17,7 @@ public class Clavier {
 
     public static String readString(){
         try{
+            Scanner sc = new Scanner(System.in);
             String result = sc.nextLine();
             return result;
         } catch (Exception e) {

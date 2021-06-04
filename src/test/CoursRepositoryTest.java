@@ -21,7 +21,6 @@ class CoursRepositoryTest {
     @Test
     void create() throws IOException, ClassNotFoundException {
         Cours cours = new Cours("MTH","Maths",30);
-        //Etudiant etudiant = new Etudiant("Boukari","Jamal","fakeCode");
 
         System.out.println(cours.toString());
         coursRepository.create(cours);
@@ -39,7 +38,7 @@ class CoursRepositoryTest {
 
     @Test
     void findOne() throws IOException, ClassNotFoundException {
-        assertFalse(coursRepository.findOne(1)==null);
+        assertFalse(coursRepository.findOne(0)==null);
     }
 
     @Test
